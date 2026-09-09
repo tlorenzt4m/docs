@@ -1,0 +1,62 @@
+---
+title: "Formular-Konfiguration: Leads im Chat erfassen"
+sidebarTitle: "Formular-Konfiguration"
+description: "Erfasst Kontakt- und Lead-Daten direkt im Chat: Formulare anlegen, Trigger-Prompt setzen und Daten an Mail, Webhook oder Lead-Management senden."
+---
+
+Mit der Formular-Konfiguration erfasst ihr Kontaktdaten oder Lead-Informationen direkt im Chat, zum Beispiel für Rückrufwünsche, E-Mail-Anfragen oder Angebotsanfragen.
+
+## Navigation
+
+Sidebar → **CHAT** → **Chat Agent** → Bereich **Formular-Konfiguration**
+
+## Schritte
+
+<Steps>
+  <Step title="Bereich öffnen">
+    Bereich **Formular-Konfiguration** aufklappen.
+  </Step>
+  <Step title="Neues Formular anlegen">
+    Auf **\+ Neu erstellen** klicken, um ein neues Formular anzulegen.
+  </Step>
+  <Step title="Formular konfigurieren">
+    Im Formular-Editor konfigurieren:
+
+    - **Formularname** — Name des Formulars (z. B. _Contact Form_)
+    - **Trigger-Instruktion-Prompt** — beschreibt, wann das Formular im Chat angezeigt werden soll (z. B. _„Wenn der Nutzer Kontakt aufnehmen oder ein Angebot anfordern möchte."_)
+    - **\+ Feld hinzufügen** — die gewünschten Eingabefelder hinzufügen (Name, E-Mail, Nachricht usw.)
+  </Step>
+  <Step title="Daten-Verarbeitung wählen">
+    Unter **Daten-Verarbeitung** wählen, wohin die erfassten Daten gesendet werden:
+
+    - **Daten per Mail senden**
+    - **Daten per Webhook senden**
+    - **Daten in Lead-Management speichern**
+  </Step>
+  <Step title="Speichern">
+    Auf **Formular-Konfiguration speichern** klicken.
+  </Step>
+  <Step title="Formular löschen (optional)">
+    Zum Löschen eines Formulars das Papierkorb-Symbol oben rechts im Formular-Editor nutzen.
+  </Step>
+</Steps>
+
+![Formular-Editor mit Name, Trigger-Prompt, Feldern und Daten-Verarbeitung](/images/trendvoice/Formular-Editor.png)
+
+<Tip>
+  Formuliert den Trigger-Prompt klar und konkret, damit der Chat Agent das Formular zum richtigen Zeitpunkt anbietet.
+</Tip>
+
+<Note>
+  Erfasste Daten erscheinen unter Lead-Management.
+</Note>
+
+## Ergebnis prüfen
+
+Im [Playground](/trendvoice/chat/playground) eine Anfrage stellen wie _„Ich möchte kontaktiert werden"_. Das Formular wird angezeigt.
+
+## Häufige Probleme
+
+| Problem | Lösung |
+| --- | --- |
+| Formular erscheint im Chat nicht | Gespeichert? Agent-Konfiguration prüfen |

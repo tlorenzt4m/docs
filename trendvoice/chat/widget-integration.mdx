@@ -1,0 +1,95 @@
+---
+title: "Widget-Integration: Design anpassen und einbinden"
+sidebarTitle: "Widget-Integration"
+description: "Passt das Chat-Widget optisch an (Titel, Farben, Themes, Position) und bindet es per Snippet-Code auf eurer Website ein."
+---
+
+Ein **Widget** ist das kleine Chat-Fenster, das Besucher auf eurer Website sehen und nutzen können. In der Widget-Integration passt ihr es optisch an und bindet es auf eurer Website ein.
+
+## Navigation
+
+Sidebar → **CHAT** → **Chat Agent** → Bereich **Widget-Integration**
+
+## Teil A: Design anpassen
+
+Bereich **Widget-Integration** aufklappen und die Unterbereiche nacheinander anpassen. Nach jeder Änderung auf **Speichern** klicken und das Ergebnis im [Playground](/trendvoice/chat/playground) prüfen.
+
+### Allgemein
+
+Grundeinstellungen für Titel, Verhalten und Darstellung des Widgets:
+
+- **Titel** — Anzeigename des Chats (z. B. _„\[Ihr Unternehmensname\]-Chatbot"_)
+- **Bot-Name** — Name des Bots in der Konversation
+- **URL Datenschutzerklärung** — Link zu eurer Datenschutzseite
+- **Auto-Open** — ob sich das Widget automatisch öffnet (_Nein_, _Ja_ oder Popup-Nachricht)
+- **Popup-Nachricht** — Text der Popup-Nachricht (z. B. _„Hallo! Wie kann ich Ihnen helfen?"_)
+- **Widget-Typ** — _Chat-Agent_ (nur als Admin sichtbar)
+- **Theme** — _Auto_, _Hell_ oder _Dunkel_
+- **Bubble-Tail** — Sprechblasen-Pfeil ein- oder ausschalten
+- **Größe (1 bis 20)** — Größe des Widgets
+
+![Widget-Integration: Unterbereich Allgemein](/images/trendvoice/Widget-Allgemein.png)
+
+### Button & Header
+
+Aussehen und Position des Chat-Buttons und der Kopfzeile:
+
+- **Position** — z. B. _Rechts oben_
+- **Button-Größe (px)** — Größe des Chat-Buttons (20 bis 200)
+- **Chat Logo/Icon** — Bild, das im Button angezeigt wird
+- **Header-Logo** — _Unternehmens-Logo anzeigen_, Chat-Logo oder kein Logo
+- **Primär-Farbe** / **Sekundär-Farbe** — Farben per Farbwähler oder Hex-Code (z. B. Corporate-Identity-Farben / Unternehmensfarben)
+- **Button Border** — Rahmen um den Button (_Ja_/_Nein_)
+
+![Widget-Integration: Unterbereich Button & Header](/images/trendvoice/Widget-Button-Header.png)
+
+### Farben: Helles Theme
+
+Farbschema für helle Websites. Für jede Option könnt ihr eine eigene Farbe wählen oder _Widget-Standard_ beibehalten:
+
+- **Bubble Agent** — Hintergrundfarbe der Bot-Sprechblase
+- **Bubble User** — Hintergrundfarbe der Nutzer-Sprechblase
+- **Agent-Text** / **User-Text** — Textfarben
+- **Chat-Hintergrund** — Hintergrundfarbe des Chat-Fensters
+
+![Widget-Integration: Unterbereich Farben Helles Theme](/images/trendvoice/Widget-Farben-Light.png)
+
+### Farben: Dunkles Theme
+
+Entspricht dem hellen Theme, gilt aber für dunkle Websites. Dieselben Felder: Bubble Agent, Bubble User, Agent-Text, User-Text und Chat-Hintergrund.
+
+![Widget-Integration: Unterbereich Farben Dark Theme](/images/trendvoice/Widget-Farben-Dark.png)
+
+## Teil B: Auf der Website einbinden
+
+Unterbereich **Snippet-Code** aufklappen.
+
+<Steps>
+  <Step title="Modus wählen">
+    Zwischen **Standard** und **Override** wählen:
+
+    - **Standard** — verwendet die in TrendVoice konfigurierten Einstellungen
+    - **Override** — ermöglicht manuelle Anpassungen im Code
+  </Step>
+  <Step title="Code kopieren">
+    Auf das Kopier-Symbol klicken, um den HTML/JavaScript-Code in die Zwischenablage zu kopieren.
+  </Step>
+  <Step title="Code einfügen">
+    Den Code in den Quellcode eurer Website einfügen, in der Regel vor dem schließenden `</body>`-Tag.
+  </Step>
+</Steps>
+
+<Note>
+  **Hinweis für Nicht-Techniker:** Wenn ihr keinen Zugang zum Website-Code habt, leitet den Snippet-Code an eure IT-Abteilung oder Webagentur weiter.
+</Note>
+
+## Ergebnis prüfen
+
+Das Widget ist auf der Live-Website sichtbar und verhält sich wie im Playground.
+
+## Häufige Probleme
+
+| Problem | Lösung |
+| --- | --- |
+| Widget erscheint nicht auf Website | Code korrekt eingefügt? Browser-Cache leeren |
+| Falsche Farben | Helles oder dunkles Theme passend zur Website wählen |

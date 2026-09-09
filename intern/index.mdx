@@ -1,0 +1,46 @@
+---
+title: "Interne Dokumentation"
+sidebarTitle: "Übersicht"
+description: "Nachschlagewerk für AI Prompt Engineers zu Retell, Directus, Twilio und dem Chat-Bot."
+audience: ["prompt_engineer", "admin"]
+product: "intern"
+module: "overview"
+visibility: "internal"
+version: "2026-06"
+doc_status: "published"
+---
+
+Nachschlagewerk für AI Prompt Engineers zu Retell, Directus und Twilio. Jedes Kapitel folgt einem einheitlichen Muster aus Retell-Übersicht, Trends4Markets-Default, Navigation & Schritten sowie Hinweisen zu Betrieb, Qualität und Fehlersuche.
+
+## Kapitel
+
+<CardGroup cols={2}>
+  <Card title="Vom neuen Projekt zum Voice Agent" icon="rocket" href="/intern/onboarding/vom-projekt-zum-bot">
+    Kompletter Onboarding-Ablauf: vom neuen Kunden bis zum Test-Bot.
+  </Card>
+
+  <Card title="Retell Agents" icon="phone" href="/intern/retell/agent-erstellung">
+    Voice-Agent, Prompt-Standard, Funktionen, Knowledge Base und mehr.
+  </Card>
+
+  <Card title="Retell-Monitoring" icon="chart-line" href="/intern/retell/monitoring/analytics">
+    Analytics-Widgets und Alerts für Anrufvolumen und Kosten.
+  </Card>
+
+  <Card title="Directus / Backend" icon="database" href="/intern/directus/backend-konfiguration">
+    Partner-Datensatz, Felder und Kontakte im Backend.
+  </Card>
+
+  <Card title="Chat-Bot" icon="link" href="/intern/chat-bot/link-retrieval">
+    Link Retrieval: Website-Links als Knowledge importieren.
+  </Card>
+</CardGroup>
+
+## Quellen und Formate
+
+Diese Markdown-Doku ist die **Single Source of Truth**. Andere Formate werden daraus generiert:
+
+- **PDF / LaTeX** (klassische Doku, KB-Artefakt): `python docs/scripts/build_pdf.py --section intern` → `docs/export/interne-doku.pdf`
+- **JSON** (In-App-Hilfe und RAG): `python docs/scripts/export_docs.py`
+
+Das frühere LaTeX-Original `Interne-Doku/` wurde vollständig hierher migriert und liegt nur noch als Archiv unter `_archive/Interne-Doku_2026-06-25.zip`. Die generierte PDF/TeX-Doku entsteht ab jetzt ausschließlich aus diesen Markdown-Quellen.

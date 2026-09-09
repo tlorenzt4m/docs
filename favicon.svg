@@ -1,0 +1,14 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35.35 27.95">
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="35.35" y2="27.95" gradientUnits="userSpaceOnUse">
+      <stop offset="20%" stop-color="#591eb3"/>
+      <stop offset="100%" stop-color="#27b8fd"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#gradient)" d="M0,20.89h3.25c.17,0,.37-.13.46-.3l7.18-13.74h-3.24c-.17,0-.37.14-.46.3L0,20.89Z"/>
+  <path fill="url(#gradient)" d="M.97,27.95h3.25c.17,0,.37-.13.46-.3L19.13,0h-3.24c-.17,0-.37.14-.46.3L.97,27.95Z"/>
+  <path fill="url(#gradient)" d="M10.24,19.12h3.25c.17,0,.37-.13.46-.3l5.26-10.06h-3.24c-.17,0-.37.14-.46.3l-5.26,10.06Z"/>
+  <path fill="url(#gradient)" d="M19.56,19.12h3.25c.17,0,.37-.13.46-.3l5.26-10.06h-3.24c-.17,0-.37.14-.46.3l-5.26,10.06Z"/>
+  <path fill="url(#gradient)" d="M12.76,23.21h3.25c.17,0,.37-.13.46-.3L26.04,4.6h-3.24c-.17,0-.37.14-.46.3l-9.57,18.31Z"/>
+  <path fill="url(#gradient)" d="M22.08,23.21h3.25c.17,0,.37-.13.46-.3l9.57-18.31h-3.24c-.17,0-.37.14-.46.3l-9.57,18.31Z"/>
+</svg>
