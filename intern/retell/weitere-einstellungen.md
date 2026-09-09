@@ -170,8 +170,12 @@ Zusammengefasst aus der Retell-Doku „Data Storage Settings" (`https://docs.ret
 
 **Trends4Markets-Default:**
 
-- Agent level webhook URL: `backend.Trends4Markets`-URL einfügen.
-- Andere Einstellungen auf Standard lassen.
+Je nach Agent-Typ die passende Agent Level Webhook URL eintragen (den `secret`-Parameter am Ende nicht mit dokumentieren/teilen — der ist pro Partner unterschiedlich und geheim):
+
+- **Voice-Agenten (Anrufe):** `https://backend.trendvoice.ai/api/v1/retell-call-webhook?secret=[secret-String]`
+- **Chat-Agenten:** `https://backend.trendvoice.ai/api/v1/retell-chat-webhook?secret=[secret-String]`
+
+Andere Einstellungen auf Standard lassen.
 
 ## MCP Settings
 

@@ -44,7 +44,7 @@ Weiter unten im Partner-Datensatz folgen zahlreiche weitere Felder (Auswahl):
 **Retell-Anbindung**
 
 - **Retell Org ID:** Workspace-/Organisations-ID aus Retell (Settings → Workspace).
-- **API Key:** Retell-API-Key des Workspaces.
+- **API Key:** Retell-API-Key des Workspaces. Wichtig: Hier muss der **Secret Key** aus Retell eingetragen werden (nicht der Public Key) — nur damit funktionieren die Webhooks korrekt.
 - **Agent ID:** Inbound-(Haupt-)Agent.
 - **Outbound Agent ID:** Agent für ausgehende Anrufe.
 - **Override Agent ID:** Override-Agent.
