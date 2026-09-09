@@ -222,7 +222,9 @@ sip:sip.retellai.com
 ### Agent und Webhook verbinden
 
 - Dem SIP Trunk den Inbound Call Agent hinzufügen.
-- Webhook hinzufügen: Standard-Webhook einfügen (aus Directus oder aus einem anderen Agent kopieren).
+- Webhook hinzufügen: je nach Agent-Typ die passende URL einfügen (Details siehe [Webhook Settings](/intern/retell/weitere-einstellungen#webhook-settings)), den `secret`-Parameter am Ende dabei aus Directus bzw. von einem anderen Agent des Partners kopieren:
+  - Voice-Agenten (Anrufe): `https://backend.trendvoice.ai/api/v1/retell-call-webhook?secret=[secret-String]`
+  - Chat-Agenten: `https://backend.trendvoice.ai/api/v1/retell-chat-webhook?secret=[secret-String]`
 
 ### Testanruf
 
@@ -249,7 +251,7 @@ Einmal einen Testanruf machen.
 | Daten | Quelle in Retell |
 | :-- | :-- |
 | Retell Org ID | Settings → Workspace → Workspace ID kopieren |
-| Retell API Key | API Keys → Key kopieren |
+| Retell API Key | API Keys → Key kopieren (**Secret Key**, nicht Public Key — sonst funktionieren die Webhooks nicht) |
 | Agent ID | Agents → Hauptagent → im Promptfenster rechts die Agent ID kopieren |
 | Override Agent | wie oben einfügen |
 | Inbound Number | Inbound Number aus Retell kopieren |
@@ -325,7 +327,16 @@ Danach oben rechts auf den Haken klicken, um zu speichern.
 Ganz weit nach unten scrollen bis zu den roten Admin-Optionen.
 
 - **Rolle:** TrendVoice-Owner
-- **Policies:** Unter **Policies → Vorhanden** ganz runter scrollen und folgende Rollen / Policies hinzufügen: TrendVoice, Switchboard, Knowledge, SMS.
+- **Policies:** Unter **Policies → Vorhanden** ganz runter scrollen und je nachdem, ob der Kunde Voice- oder Chat-Kunde ist, folgende Rollen / Policies hinzufügen:
+
+| Voice-Kunden | Chat-Kunden |
+| :-- | :-- |
+| TrendVoice | TrendVoice |
+| Switchboard | Switchboard |
+| Knowledge | Knowledge |
+| SMS | SMS |
+| — | LeadContacts |
+| — | Chats |
 
 ### Partner hinzufügen
 
@@ -334,13 +345,15 @@ Ganz weit nach unten scrollen bis zu den roten Admin-Optionen.
 
 ### Feature Flags setzen
 
-**Default Features:**
+Je nachdem, ob der Kunde Voice- oder Chat-Kunde ist, folgende Default Features setzen:
 
-- Feature TrendVoice
-- Feature Switchboard
-- Feature Show Recording Files
+| Voice-Kunden | Chat-Kunden |
+| :-- | :-- |
+| Feature TrendVoice | Feature TrendVoice |
+| Feature Switchboard | Feature Switchboard |
+| Feature Show Recording Files | Feature Chatagents |
 
-**Für Integrationen zusätzlich:**
+**Für Integrationen zusätzlich (Voice-Kunden):**
 
 - Feature Show Call Details
 - Feature TrendVoice Integrations
