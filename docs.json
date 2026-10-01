@@ -108,7 +108,7 @@
     "primary": {
       "type": "button",
       "label": "Zur App",
-      "href": "https://voice.trendview.de/"
+      "href": "https://app.trendvoice.ai/"
     }
   },
   "contextual": {
