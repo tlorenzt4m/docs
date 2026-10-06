@@ -226,6 +226,11 @@ sip:sip.retellai.com
   - Voice-Agenten (Anrufe): `https://backend.trendvoice.ai/api/v1/retell-call-webhook?secret=[secret-String]`
   - Chat-Agenten: `https://backend.trendvoice.ai/api/v1/retell-chat-webhook?secret=[secret-String]`
 
+**Wo der Webhook in Retell eingetragen werden muss:**
+
+- Bei den **Telefonnummern** (`Deploy → Phone Numbers`) — Webhook dort an der jeweiligen Nummer hinterlegen.
+- Zusätzlich jeweils im **Agenten**: einmal im **Inbound Agent** und einmal im **Override Agent** (Webhook Settings des jeweiligen Agenten).
+
 ### Testanruf
 
 Einmal einen Testanruf machen.
